@@ -2,6 +2,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	font-family: Helvetica, sans-serif;
 	font-size: 22px;
 	color: seashell;
@@ -34,7 +35,7 @@ header {
 }
  
 header nav {
-		display: inline-flex;
+	display: inline-flex;
 } 
 
 header span {
@@ -50,7 +51,6 @@ content {
 	display: flex;
 	flex-direction: column;
 	align-items: space-between;
-	border: 1px solid white;
 	width: 1200px;
 	position: relative;
 }
@@ -64,15 +64,10 @@ h2, h3 ,h4 {
 #mission {
 	display: flex;
 	align-items: center;
-	background-image: url("../images/mission.jpg");
-	height: 700px;
-}
-
-.parent { 
-	display: flex;
 	justify-content: center;
 	text-align: center;
-	border: 1px solid white;
+	background-image: url("../images/mission.jpg");
+	height: 700px;
 	padding-top: 70px;
 }
 
@@ -90,6 +85,7 @@ h2, h3 ,h4 {
 	width: 1000px;
 	height: 700px;
 	margin: 0 100px;
+	padding-top: 70px;
 }
 
 .menu {
@@ -137,3 +133,29 @@ h2, h3 ,h4 {
 	opacity: 0.9;
 	margin: 5px 20px;
 }
+
+/*Contact*/
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	height: 200px;
+	padding-top: 20px;
+}
+
+h5 {
+	margin: 10px;
+}
+
+/*Footer*/
+footer {
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 70px;
+	padding-left: 20px;
+}
+
